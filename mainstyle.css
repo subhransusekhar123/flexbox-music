@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+   width: 90vw;
+   height: 90vh;
+   margin: 3% auto;
+   background-color: lightcoral;
+   position: relative;
+
+
+
+}
+
+.side-bar{
+    height: 90%;
+    width: 8vw;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+.footer{
+    height: 15%;
+    width: 100%;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    border: red solid 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.img-Name{
+    
+    margin-left: 50px;
+    display: flex;
+    
+    
+   
+}
+
+.Name{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.imgName-content{
+    padding-left: 20px;
+    
+}
+
+.favicon-footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+/* firstone */
+
+
+.firstone{
+    background-color: lightsalmon;
+    height: 42.5%;
+    width: 91%;
+ 
+    /* border: 2px red solid; */
+    position: absolute;
+    right: 0;
+    top:0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.firstone .img-firstone img{
+    height: 150px;
+    width: 150px;
+}
+
+.header-favicon{
+    display: flex;
+    gap:50px;
+    justify-content: space-around;
+}
+
+/* 2nd patch */
+
+.body-div{
+    width: 91%;
+    height: 42.5%;
+    background-color: tomato;
+    position: absolute;
+    right:0;
+    top:43%;
+    text-align: center;
+    
+
+}
+
+.list-container{
+    margin-top: 2.7%;
+}
+
+.lines{
+    list-style: none;
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1.5%;
+    /* margin-top: ; */
+    
+    
+}
+
+.lines:nth-child(odd){
+    background-color: orangered;
+}
+
+.lines:nth-child(even){
+    background-color: orange;
+}
+
+.lines li {
+    width: 100%;
+    
+}
+
+.fav{
+    font-size: 3rem;
+}
+
+.fav:hover{
+    color: yellow;
+}
+
+.header-fav-name{
+    font-size: 1rem;
+    padding-top: 2.5%;
+    
+}
+
+.lines li button{
+    background-color: tomato;
+    color: black;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .container{
+        width: 100vw;
+    }
+    .firstone{
+        display: flex;
+        background-color: red;
+        flex-direction: column;
+        gap: 14px;
+        width: 100vw;
+    }
+
+    .firstone .img-firstone img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .Name{
+        margin-bottom: 0;
+    }
+
+    .Name h1{
+        font-size: 24px;
+    }
+
+    .fav{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header-favicon{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .body-div{
+        width: 100vw;
+    }
+  }
